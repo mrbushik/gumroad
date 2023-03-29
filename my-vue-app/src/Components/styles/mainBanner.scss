@@ -204,28 +204,127 @@
 }
 
 @media (max-width: 991px) {
+  .home-hero {
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
   .main__banner-wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
-}
-@media screen and (max-width: 479px) {
-  .callout-image.creator {
-    width: 100%;
-    min-width: 100%;
+  .sticker.home-02 {
+    top: 1rem;
+  }
+  .sticker {
+    left: 0%;
+    bottom: 0%;
+  }
+  .name-tag {
+    right: 0rem;
+    bottom: 3rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2.7rem;
+    background-position: 8px 53%;
+    background-size: 1.75rem;
   }
 }
-
 @media screen and (max-width: 767px) {
   .callout-image.creator {
     width: 80%;
     min-width: 80%;
   }
+  .sticker.home-02 {
+    right: 1rem;
+    width: 6.5rem;
+  }
+  .sticker.home-01 {
+    left: -1rem;
+    bottom: -1rem;
+    width: 11rem;
+  }
+  .home-hero {
+    h1 {
+      font-size: 4rem;
+    }
+  }
 }
-
 @media screen and (max-width: 479px) {
+  .callout-image.creator {
+    width: 100%;
+    min-width: 100%;
+  }
+  .sticker.home-02 {
+    right: -2.5rem;
+    width: 6rem;
+  }
+  .sticker.home-01 {
+    left: -2rem;
+    bottom: -3rem;
+    width: 10rem;
+  }
+  .name-tag {
+    bottom: 0rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+  }
   .callout-image {
     width: 100%;
     min-width: 100%;
+  }
+  .home-hero {
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    .section-sub-head {
+      font-size: 1.25rem;
+      line-height: 1.4;
+      letter-spacing: 0.005em;
+    }
+  }
+  .sticker.home-01 {
+    left: -1rem;
+    bottom: 0rem;
+    width: 7rem;
+  }
+  .sticker.home-02 {
+    right: 2.5rem;
+    width: 4rem;
+  }
+  .name-tag {
+    right: -0.35vw;
+    bottom: 2rem;
+  }
+  .callout-image.creator {
+    width: 77%;
+    min-width: 85%;
+    margin-left: -50px;
+  }
+  .name-tag {
+    right: 11.65vw;
+    bottom: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .shadow-button-text {
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto 20px;
+  }
+  .home-hero h1 {
+    font-size: 4rem;
+  }
+  .home-hero {
+    p {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
   }
 }
