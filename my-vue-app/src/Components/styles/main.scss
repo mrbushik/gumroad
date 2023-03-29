@@ -1,0 +1,38 @@
+header{
+
+  height: 50px;
+  border: 2px solid #000000;
+  h1{
+    font-size: 36px;
+    font-family: 'MarbyPro-Bold';
+    font-weight: 700;
+    margin: 0;
+  }
+  a{
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 18px
+  }
+
+}
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__timer-container{
+  background: #006c65;
+  border: 2px solid #000000;
+  p{
+    word-spacing: 2px;
+    font-family: MarbyPro-Bold;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  span{
+    color: #f7cb45
+  }
+}
+

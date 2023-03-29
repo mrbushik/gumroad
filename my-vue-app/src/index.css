@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "MarbyPro";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: url("Components/styles/MabryPro-Regular.woff2");
+}
+@font-face {
+  font-family: "MarbyPro-Light";
+  font-style: normal;
+  font-weight: 300;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: url("Components/styles/MabryPro-Light.woff2");
+}
+@font-face {
+  font-family: "MarbyPro-Bold";
+  font-style: normal;
+  font-weight: 700;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: url("Components/styles/MabryPro-Bold.woff2");
+}
+body {
+  font-family: "MarbyPro";
+  margin: 0px;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

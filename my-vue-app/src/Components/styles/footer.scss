@@ -1,0 +1,99 @@
+.bg-black {
+  background-color: #000;
+  color: #fff;
+}
+.section {
+  position: relative;
+  padding-top: 6.5rem;
+  padding-bottom: 7rem;
+  border-bottom: 2px solid #000;
+}
+.container__footer {
+  width: 100%;
+  padding-right: 4vw;
+  padding-left: 4vw;
+}
+.inline-newsletter-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  -ms-grid-columns: 1fr 5rem;
+  grid-template-columns: 1fr 5rem;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+.form-input.footer-newsletter {
+  height: 2.5rem;
+  padding: 1rem 1.5rem;
+  border-style: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #fff;
+  color: #000;
+}
+.form-input {
+  width: 100%;
+  height: 3.75rem;
+  margin-bottom: 0px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #252a2e;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.w-input,
+.w-select {
+  display: block;
+}
+@media screen and (max-width: 991px) {
+  .form-submit-btn.arrow {
+    font-size: 1.5rem;
+  }
+}
+.form-submit-btn.arrow {
+  padding: 0.1rem 0.5rem 0.5rem;
+  border-left: 2px solid #000;
+  background-color: #ff90e8;
+  -webkit-transition: color 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+  color: #000;
+  font-size: 24px;
+  font-family: MarbyPro-Bold;
+}
+.form-submit-btn {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #ff90e8;
+  color: #000;
+}
+.w-button {
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #3898ec;
+  color: white;
+  border: 0;
+  border-left-color: currentcolor;
+  border-left-style: none;
+  border-left-width: 0px;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.site__logo {
+  width: 13rem;
+  max-width: none;
+  min-width: auto;
+}
+.w-embed::before,
+.w-embed::after {
+  content: " ";
+  display: table;
+}
