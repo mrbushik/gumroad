@@ -7,7 +7,7 @@ const GrowTogether = () => {
         <div className="column-padding">
           <div className="content-grid grow__main-title">
             <h2 className="text-xl ">Grow together</h2>
-            <p className="text-md grow__text-right">
+            <p className="text-md grow__text-right grow__text-description">
               Sell what you know and ask questions about what you don’t. Start
               learning in the Community, where thousands of alums are posting
               advice, tips, and encouragement. Introduce yourself, learn from

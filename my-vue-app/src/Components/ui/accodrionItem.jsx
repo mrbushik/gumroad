@@ -9,7 +9,7 @@ const AccodrionItem = ({ title, description }) => {
     <div className="accordion-wrapper">
       <div className="accordion-header" onClick={handleShow}>
         {show ? <p>-</p> : <p>+</p>}
-        <h3 className="accordion-header-text">{title}</h3>
+        <h3 className="accordion-header-text accordion__title">{title}</h3>
       </div>
       <div className="accordion-body">
         {show && <p className="text-md accordion-description">{description}</p>}

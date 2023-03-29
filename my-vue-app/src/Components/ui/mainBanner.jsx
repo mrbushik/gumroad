@@ -3,7 +3,7 @@ import "../styles/mainBanner.scss";
 const MainBanner = () => {
   return (
     <div className="main__banner-wrapper">
-      <div className="bg-pink border-right">
+      <div className="bg-pink border-right main__banner-pink">
         <div className="column-padding">
           <div className="tablet-centered">
             <div className="content-grid home-hero">

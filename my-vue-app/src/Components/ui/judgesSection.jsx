@@ -66,7 +66,7 @@ const JudgesSection = () => {
               <div className="tags-wrapper discover-categories-item-tags w-dyn-items">
                 {item.tags.map((item, index) => (
                   <a
-                    className="discover-categories-item-tags-link w-inline-block"
+                    className="discover-categories-item-tags-link w-inline-block tegs__item"
                     key={index}
                   >
                     <div className="tag">{item}</div>
