@@ -3,7 +3,7 @@ import "../styles/footer.scss";
 const Footer = () => {
   return (
     <footer className="section bg-black wf-section">
-      <div className="container__footer container__footer-wrapper">
+      <div className="footer__main-wrapper">
         <div className="footer__container-left">
           <img
             className="site__logo"
@@ -14,12 +14,50 @@ const Footer = () => {
           </h4>
           <div className="w-embed">
             <form className="inline-newsletter-grid">
-              <input className="form-input footer-newsletter w-input" />
+              <input
+                className="form-input footer-newsletter w-input"
+                placeholder="Your email address"
+              />
               <button className="form-submit-btn arrow w-button">→</button>
             </form>
           </div>
         </div>
-        <div className="footer__container-right"></div>
+        <div className="footer__container-right">
+          <div className="footer__links-container">
+            <a href="/" className="footer__other-link">
+              Help
+            </a>
+            <a href="/" className="footer__other-link">
+              University
+            </a>
+            <a href="/" className="footer__other-link">
+              Blog
+            </a>
+            <a href="/" className="footer__other-link">
+              Terms of Service
+            </a>
+            <a href="/" className="footer__other-link">
+              Privacy Policy
+            </a>
+          </div>
+          <div className="footer__links-container">
+            <a href="/" className="footer__other-link">
+              Features
+            </a>
+            <a href="/" className="footer__other-link">
+              Pricing
+            </a>
+            <a href="/" className="footer__other-link">
+              Discover
+            </a>
+            <a href="/" className="footer__other-link">
+              Jobs
+            </a>
+            <a href="/" className="footer__other-link">
+              Roadmap
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );

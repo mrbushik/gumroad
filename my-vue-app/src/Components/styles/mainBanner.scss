@@ -196,3 +196,36 @@
   text-align: center;
   text-decoration: none;
 }
+
+@media (max-width: 1255px) {
+  .shadow-button-wrap {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .main__banner-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 479px) {
+  .callout-image.creator {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .callout-image.creator {
+    width: 80%;
+    min-width: 80%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .callout-image {
+    width: 100%;
+    min-width: 100%;
+  }
+}
