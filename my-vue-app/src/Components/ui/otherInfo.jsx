@@ -28,13 +28,9 @@ const OtherInfo = () => {
         <h2>Starts, start here</h2>
         <p>We've got the guides that will get you going.</p>
       </div>
-      <div className="other__cards-wrapper grid-thirds">
+      <div className="other__cards-wrapper grid-thirds spacing-2xl">
         {otherCardsItems.map((item, index) => (
-          <a
-            href="/"
-            className="card-wrap w-inline-block other__cart-item"
-            key={index}
-          >
+          <a href="/" className="card-wrap w-inline-block " key={index}>
             <div className="card-thumbnail-wrap">
               <img className="card-thumbnail" src={item.url} />
             </div>

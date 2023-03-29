@@ -93,3 +93,13 @@
 .accordion-body {
   overflow: hidden;
 }
+@media (max-width: 600px) {
+  .accordion-header {
+    padding: 1rem 7vw 0rem 0vw;
+  }
+}
+@media (max-width: 400px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
+}

@@ -114,3 +114,15 @@
   margin-top: auto;
   font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+  .spacing-2xl {
+    display: flex;
+    flex-direction: column;
+  }
+  .w-inline-block {
+    max-width: 90%;
+    display: inline-block;
+    margin: 20px auto;
+  }
+}

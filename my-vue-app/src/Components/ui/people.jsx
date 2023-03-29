@@ -49,7 +49,7 @@ const People = () => {
   return (
     <div className="people__section">
       <div className="container">
-        <div className="section uni-creator-stories bg-black wf-section">
+        <div className="section uni-creator-stories bg-black wf-section people__main-wrapper">
           {peopleItems.map((items, index) => (
             <div className="flex w-dyn-item" key={index}>
               <a className="card-wrap pink-shadow w-inline-block">

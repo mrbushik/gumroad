@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/growTogether.scss";
 const GrowTogether = () => {
   return (
-    <div className="grid-halves university-gum-characters wf-section">
+    <div className="grid-halves university-gum-characters wf-section grow__main-wrapper">
       <div className="bg-pink border-right">
         <div className="column-padding">
           <div className="content-grid grow__main-title">
@@ -16,7 +16,7 @@ const GrowTogether = () => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div className="grow__img-container">
         <img
           className="growl-img"
           src="https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619d0b015cbf7851b39ae4bc_gum-characters.svg"

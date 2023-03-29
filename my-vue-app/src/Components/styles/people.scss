@@ -153,3 +153,26 @@
 .cs-card-read-more {
   margin-top: auto;
 }
+
+@media (max-width: 991px) {
+  .section {
+    padding-top: 5.5rem;
+    padding-bottom: 6.5rem;
+  }
+  .section.uni-creator-stories {
+    padding-top: 3rem;
+  }
+  .people__main-wrapper {
+    display: block;
+  }
+  .card-wrap {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4.5rem;
+  }
+}
