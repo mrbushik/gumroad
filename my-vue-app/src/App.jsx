@@ -1,6 +1,4 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useEffect, useState } from "react";
 import "./Components/styles/main.scss";
 import Header from "./Components/navigation/header";
 import HeaderTimer from "./Components/ui/headerTimer";
@@ -11,15 +9,26 @@ import Questions from "./Components/ui/questions";
 import GrowTogether from "./Components/ui/growTogether";
 import OtherInfo from "./Components/ui/otherInfo";
 import Footer from "./Components/navigation/footer";
+import Modal from "./Components/modal/modal";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [closeModal, setCloseModal] = useState(true);
+
+  useEffect(() => {
+    const modal = document.querySelector(".modal-bg");
+    closeModal
+      ? (modal.style.display = "none")
+      : (modal.style.display = "block");
+  }, [closeModal]);
+
+  const toggleModal = () => setCloseModal((perv) => !perv);
 
   return (
     <div className="App">
-      <Header />
-      <HeaderTimer />
-      <MainBanner />
+      <Modal onToggle={toggleModal} />
+      <Header onToggle={toggleModal} />
+      <HeaderTimer  />
+      <MainBanner onToggle={toggleModal} />
       <JudgesSection />
       <People />
       <Questions />

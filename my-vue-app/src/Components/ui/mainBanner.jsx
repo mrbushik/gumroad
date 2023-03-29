@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/mainBanner.scss";
-const MainBanner = () => {
+const MainBanner = ({ onToggle }) => {
   return (
     <div className="main__banner-wrapper">
       <div className="bg-pink border-right main__banner-pink">
@@ -16,7 +16,12 @@ const MainBanner = () => {
                 that easy.
                 <br />
               </p>
-              <a className='shadow-button-wrap w-inline-block'><div className='shadow-button-text'>Start Selling</div></a>
+              <span
+                className="shadow-button-wrap w-inline-block"
+                onClick={onToggle}
+              >
+                <div className="shadow-button-text">Start Selling</div>
+              </span>
             </div>
           </div>
         </div>

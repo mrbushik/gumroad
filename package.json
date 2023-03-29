@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "prettier": "2.8.7"
+  },
+  "dependencies": {
+    "react-hook-form": "^7.43.8"
   }
 }

@@ -1,0 +1,118 @@
+.modal-bg {
+  background: #fad8af;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+.modal__wrapper {
+  width: 50%;
+  background-color: #f0ece1;
+  margin: 10% auto;
+  padding: 20px 3%;
+}
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: $size;
+  height: $size;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: ($size - $thickness) / 2;
+    left: 0;
+    right: 0;
+    height: $thickness;
+    background: $color;
+    border-radius: $thickness;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+  span {
+    display: block;
+  }
+}
+.cross-stand-alone {
+  display: inline-block;
+  position: absolute !important;
+  cursor: pointer;
+  top: 20px;
+  right: 5%;
+  @include cross(40px, #000, 4px);
+}
+.modal__text-forms {
+  text-align: center;
+  input,
+  textarea,
+  select {
+    height: 48px;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    color: #1e242e;
+    font-size: 15px;
+    font-weight: 400;
+    width: 80%;
+  }
+  textarea {
+    height: 100px;
+  }
+}
+
+.info__modal-form {
+  background: #e4dfd0;
+  border-radius: 5px;
+  h5 {
+    padding: 15px 5% 0;
+    text-align: left;
+  }
+}
+.modal__placeholder {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 9%;
+}
+
+.submit__form {
+  background-color: #8f6600;
+  color: #fff !important;
+  font-size: 16px;
+  font-family: MarbyPro-Bold;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .modal__wrapper {
+    margin-top: 15%;
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .modal__wrapper {
+    margin-top: 20%;
+    width: 80%;
+  }
+}
